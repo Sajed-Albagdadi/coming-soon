@@ -1,24 +1,146 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Wir sind bald für Sie da</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #f4f4f4;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #333;
-            font-size: 2.5em;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wir sind bald für Sie da – Sajed Albagdadi</title>
+  <meta name="description" content="Offizielle Seite von Sajed Albagdadi – Wir sind bald für Sie da. Kontakt & Socials." />
+  <style>
+    :root {
+      --bg: #0f172a;          /* slate-900 */
+      --card: #111827;        /* gray-900 */
+      --muted: #94a3b8;       /* slate-400 */
+      --text: #e5e7eb;        /* gray-200 */
+      --accent: #38bdf8;      /* sky-400 */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 20% 10%, #1e293b, transparent),
+                  radial-gradient(1200px 800px at 80% 90%, #0ea5e9, transparent),
+                  var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 720px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      overflow: hidden;
+    }
+    .content { padding: 28px; }
+    .hero {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 9999px;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,0.15);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    h1 {
+      font-size: clamp(1.6rem, 1.4rem + 1.2vw, 2.2rem);
+      margin: 0;
+    }
+    p.subtitle {
+      color: var(--muted);
+      margin: 6px 0 0;
+    }
+    .cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.12);
+      text-decoration: none;
+      color: var(--text);
+      transition: transform .08s ease, background .2s ease;
+      font-weight: 600;
+    }
+    .btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.06); }
+    .btn.primary { border-color: rgba(56,189,248,0.5); }
+    .grid {
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .item {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 14px;
+      word-break: break-word;
+    }
+    .label { color: var(--muted); font-size: 0.92rem; }
+    .value { margin-top: 4px; font-size: 1.02rem; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+      padding: 12px 0 18px;
+    }
+  </style>
 </head>
 <body>
-    <h1>🚀 Wir sind bald für Sie da!</h1>
+  <main class="card" role="main" aria-label="Coming Soon – Sajed Albagdadi">
+    <div class="content">
+      <section class="hero">
+        <img class="avatar" src="./profile.jpg" alt="Portrait von Sajed Albagdadi" />
+        <div>
+          <h1>🚀 Wir sind bald für Sie da!</h1>
+          <p class="subtitle">Die Website von Sajed Albagdadi wird gerade gebaut. In der Zwischenzeit – einfach kontaktieren.</p>
+          <div class="cta">
+            <a class="btn primary" href="mailto:Kontakt@sajed-Albagdadi.de">E-Mail schreiben</a>
+            <a class="btn" href="tel:+491788114467">Anrufen</a>
+            <a class="btn" href="https://www.linkedin.com/in/sajedalbagdadi" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Kontakt und Links">
+        <div class="item">
+          <div class="label">E-Mail</div>
+          <div class="value"><a class="btn" href="mailto:Kontakt@sajed-Albagdadi.de">Kontakt@sajed-Albagdadi.de</a></div>
+        </div>
+        <div class="item">
+          <div class="label">Telefon</div>
+          <div class="value"><a class="btn" href="tel:+491788114467">+49 178 8114467</a></div>
+        </div>
+        <div class="item">
+          <div class="label">LinkedIn</div>
+          <div class="value"><a class="btn" href="https://www.linkedin.com/in/sajedalbagdadi" target="_blank" rel="noopener">www.linkedin.com/in/sajedalbagdadi</a></div>
+        </div>
+        <div class="item">
+          <div class="label">Impressum-Hinweis</div>
+          <div class="value">Dies ist eine vorläufige Seite. Offizielle Inhalte folgen.</div>
+        </div>
+      </section>
+    </div>
+    <footer>© {year} Sajed Albagdadi</footer>
+  </main>
+  <script>
+    // Set current year
+    document.querySelector('footer').innerHTML = "© " + new Date().getFullYear() + " Sajed Albagdadi";
+  </script>
 </body>
 </html>
